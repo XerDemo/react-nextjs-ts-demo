@@ -1,4 +1,4 @@
-import { Button, ConfigProvider } from "antd";
+import { ConfigProvider } from "antd";
 import Layout from "components/layout";
 import type { AppProps } from "next/app";
 
@@ -13,13 +13,12 @@ export default function App({ Component, pageProps }: AppProps) {
       theme={{
         token: {
           colorPrimary: "#8cf0c6ec",
-          fontSize: 16,
+          fontSize: 12,
         },
       }}
     >
       <Layout>
         <Component {...pageProps} />
-        <Button>anniu</Button>
       </Layout>
     </ConfigProvider>
   );
